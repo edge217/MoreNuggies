@@ -1,0 +1,12 @@
+{
+  "values": [
+    "minecraft:crying_obsidian",
+    "minecraft:respawn_anchor",
+    "minecraft:end_crystal",
+    "minecraft:beacon",
+    {
+      "id": "#forge:chests/ender",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_nuggies:expanding/wooden"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wooden": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:oak_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_wooden",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_nuggies:expanding/wooden"
+    ]
+  },
+  "sends_telemetry_event": false
+}

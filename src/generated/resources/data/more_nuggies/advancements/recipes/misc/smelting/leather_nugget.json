@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_leather_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "more_nuggies:leather_nugget"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_nuggies:smelting/leather_nugget"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_leather_nugget",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_nuggies:smelting/leather_nugget"
+    ]
+  },
+  "sends_telemetry_event": false
+}

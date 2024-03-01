@@ -1,0 +1,13 @@
+{
+  "values": [
+    "minecraft:lever",
+    "minecraft:brewing_stand",
+    "minecraft:pointed_dripstone",
+    {
+      "id": "#minecraft:stone_pressure_plates",
+      "required": false
+    },
+    "minecraft:stone_button",
+    "minecraft:polished_blackstone_button"
+  ]
+}

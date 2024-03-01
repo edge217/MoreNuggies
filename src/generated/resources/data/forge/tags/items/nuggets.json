@@ -1,0 +1,80 @@
+{
+  "values": [
+    {
+      "id": "#forge:nuggets/amethyst",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/cooked_chicken",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/coal",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/cobblestone",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/copper",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/diamond",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/echo",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/emerald",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/leather",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/netherite",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/obsidian",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/phantom_membrane",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/prismarine",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/quartz",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/raw_chicken",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/redstone",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/scute",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/wooden",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/charcoal",
+      "required": false
+    }
+  ]
+}

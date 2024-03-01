@@ -21,6 +21,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MoreNuggiesItemRegistry {
 
@@ -33,12 +35,7 @@ public class MoreNuggiesItemRegistry {
             "cooked_chicken_nugget", () -> new Item(new Item.Properties().food(ChickenNuggiesFoodProperties.COOKED_CHICKEN_NUGGET)));
 
     public static final RegistryObject<Item> COAL_NUGGET = ITEMS.register("coal_nugget",
-            () -> new Item(new Item.Properties()) {
-                @Override
-                public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
-                    return 200;
-                }
-            });
+            () -> new MiniFuelItem(new Item.Properties()));
 
     public static final RegistryObject<Item> COBBLESTONE_NUGGET = ITEMS.register(
             "cobblestone_nugget", () -> new Item(new Item.Properties()));
@@ -86,33 +83,40 @@ public class MoreNuggiesItemRegistry {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> CHARCOAL_NUGGET = ITEMS.register("charcoal_nugget",
-            () -> new Item(new Item.Properties()) {
-                @Override
-                public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
-                    return 200;
-                }
-            });
+            () -> new MiniFuelItem(new Item.Properties()));
 
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MoreNuggies.MODID);
+
+    public static List<Item> getItems() {
+        List<Item> items = new ArrayList<>();
+        for (Field field : MoreNuggiesItemRegistry.class.getFields()) {
+            if (!Modifier.isStatic(field.getModifiers()) || field.getName().equals("CREATIVE_TAB")) {
+                continue;
+            }
+
+            field.setAccessible(true);
+            try {
+                Object o = field.get(null);
+                if (o instanceof RegistryObject<?> ro) {
+                    items.add((Item) ro.get());
+                }
+            } catch (IllegalAccessException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        if (items.isEmpty()) {
+            throw new RuntimeException("Items list is empty. Reflection issue?");
+        }
+        return items;
+    }
 
     public static final RegistryObject<CreativeModeTab> CREATIVE_TAB = CREATIVE_MODE_TABS.register("more_nuggies_creative_tab", () -> CreativeModeTab.builder()
             .withTabsBefore(CreativeModeTabs.COMBAT)
             .icon(() -> COOKED_CHICKEN_NUGGET.get().getDefaultInstance())
             .title(Component.translatable("itemGroup.more_nuggies"))
             .displayItems((parameters, output) -> {
-                for (Field field : MoreNuggiesItemRegistry.class.getFields()) {
-                    if (!Modifier.isStatic(field.getModifiers()) || field.getName().equals("CREATIVE_TAB")) {
-                        continue;
-                    }
-                    field.setAccessible(true);
-                    try {
-                        Object o = field.get(null);
-                        if (o instanceof RegistryObject<?> ro) {
-                            output.accept(((Item) ro.get()).getDefaultInstance());
-                        }
-                    } catch (IllegalAccessException e) {
-                        throw new RuntimeException(e);
-                    }
+                for (Item item : getItems()) {
+                    output.accept(item.getDefaultInstance());
                 }
             }).build());
 
@@ -120,6 +124,18 @@ public class MoreNuggiesItemRegistry {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ITEMS.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
+    }
+
+    public static class MiniFuelItem extends Item {
+
+        public MiniFuelItem(Properties pProperties) {
+            super(pProperties);
+        }
+
+        @Override
+        public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
+            return 200; // enough to burn 1 item
+        }
     }
 
 }

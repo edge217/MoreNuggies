@@ -6,6 +6,7 @@ package com.edgeburnmedia.morenuggies;
 
 import com.edgeburnmedia.morenuggies.registry.items.MoreNuggiesItemRegistry;
 import com.mojang.logging.LogUtils;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;

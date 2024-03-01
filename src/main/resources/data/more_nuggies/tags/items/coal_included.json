@@ -1,0 +1,10 @@
+{
+  "values": [
+    {
+      "id": "#minecraft:campfires",
+      "required": false
+    },
+    "minecraft:torch",
+    "minecraft:soul_torch"
+  ]
+}

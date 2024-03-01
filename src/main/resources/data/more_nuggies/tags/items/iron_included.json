@@ -1,0 +1,37 @@
+{
+  "values": [
+    "minecraft:shield",
+    "minecraft:compass",
+    "minecraft:detector_rail",
+    "minecraft:activator_rail",
+    "minecraft:rail",
+    "minecraft:flint_and_steel",
+    "minecraft:iron_door",
+    "minecraft:iron_trapdoor",
+    "minecraft:heavy_weighted_pressure_plate",
+    "minecraft:bucket",
+    "minecraft:minecart",
+    "minecraft:chest_minecart",
+    "minecraft:furnace_minecart",
+    "minecraft:hopper_minecart",
+    "minecraft:tnt_minecart",
+    "minecraft:command_block_minecart",
+    "minecraft:iron_bars",
+    "minecraft:chain",
+    {
+      "id": "#forge:shears",
+      "required": false
+    },
+    "minecraft:tripwire_hook",
+    "minecraft:piston",
+    "minecraft:sticky_piston",
+    {
+      "id": "#minecraft:cauldrons",
+      "required": false
+    },
+    "minecraft:lantern",
+    "minecraft:soul_lantern",
+    "minecraft:spawner",
+    "minecraft:hopper"
+  ]
+}

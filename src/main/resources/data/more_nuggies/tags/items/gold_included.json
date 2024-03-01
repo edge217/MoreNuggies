@@ -1,0 +1,17 @@
+{
+  "values": [
+    "minecraft:powered_rail",
+    {
+      "id": "#forge:clocks",
+      "required": false
+    },
+    "minecraft:golden_carrot",
+    "minecraft:glistering_melon_slice",
+    "minecraft:bell",
+    "minecraft:golden_apple",
+    "minecraft:enchanted_golden_apple",
+    "minecraft:gilded_blackstone",
+    "minecraft:music_disc_pigstep",
+    "minecraft:light_weighted_pressure_plate"
+  ]
+}

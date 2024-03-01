@@ -1,0 +1,86 @@
+{
+  "values": [
+    {
+      "id": "#minecraft:wooden_buttons",
+      "required": false
+    },
+    {
+      "id": "#minecraft:wooden_pressure_plates",
+      "required": false
+    },
+    {
+      "id": "#minecraft:wooden_doors",
+      "required": false
+    },
+    {
+      "id": "#minecraft:wooden_trapdoors",
+      "required": false
+    },
+    {
+      "id": "#forge:fence_gates/wooden",
+      "required": false
+    },
+    {
+      "id": "#minecraft:boats",
+      "required": false
+    },
+    {
+      "id": "#minecraft:signs",
+      "required": false
+    },
+    {
+      "id": "#minecraft:all_signs",
+      "required": false
+    },
+    {
+      "id": "minecraft:bowl",
+      "required": false
+    },
+    {
+      "id": "#minecraft:wooden_fences",
+      "required": false
+    },
+    {
+      "id": "#forge:fences/wooden",
+      "required": false
+    },
+    {
+      "id": "#forge:chests/wooden",
+      "required": false
+    },
+    "minecraft:armor_stand",
+    "minecraft:ladder",
+    "minecraft:dead_bush",
+    {
+      "id": "#forge:fishing_rods",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/fishing_rods",
+      "required": false
+    },
+    "minecraft:warped_fungus_on_a_stick",
+    "minecraft:carrot_on_a_stick",
+    {
+      "id": "#forge:tools/crossbows",
+      "required": false
+    },
+    {
+      "id": "#forge:crossbows",
+      "required": false
+    },
+    {
+      "id": "#forge:bows",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/bows",
+      "required": false
+    },
+    {
+      "id": "#forge:books",
+      "required": false
+    },
+    "minecraft:paper"
+  ]
+}

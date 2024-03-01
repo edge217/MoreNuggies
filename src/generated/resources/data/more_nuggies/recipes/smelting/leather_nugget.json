@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.5,
+  "ingredient": {
+    "tag": "more_nuggies:leather_smeltable"
+  },
+  "result": "more_nuggies:leather_nugget"
+}

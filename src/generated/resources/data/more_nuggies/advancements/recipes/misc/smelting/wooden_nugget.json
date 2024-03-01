@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_nuggies:smelting/wooden_nugget"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wooden_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "more_nuggies:wooden_nugget"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_wooden_nugget",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_nuggies:smelting/wooden_nugget"
+    ]
+  },
+  "sends_telemetry_event": false
+}

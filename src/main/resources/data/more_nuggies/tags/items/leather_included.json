@@ -1,0 +1,10 @@
+{
+  "values": [
+    {
+      "id": "minecraft:bundle",
+      "required": false
+    },
+    "minecraft:name_tag",
+    "minecraft:lead"
+  ]
+}
