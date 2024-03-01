@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.edgeburnmedia.more_nuggies.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "MoreNuggies.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
