@@ -17,5 +17,6 @@
   "item.more_nuggies.raw_chicken_nugget": "Raw Chicken Nugget",
   "item.more_nuggies.redstone_nugget": "Redstone Nugget",
   "item.more_nuggies.scute_nugget": "Scute Nugget",
-  "item.more_nuggies.wooden_nugget": "Wooden Nugget"
+  "item.more_nuggies.wooden_nugget": "Wooden Nugget",
+  "itemGroup.more_nuggies": "More Nuggies"
 }

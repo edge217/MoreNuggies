@@ -6,7 +6,11 @@ package com.edgeburnmedia.morenuggies.registry.items;
 
 import com.edgeburnmedia.morenuggies.MoreNuggies;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.world.item.*;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -19,7 +23,6 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
 public class MoreNuggiesItemRegistry {
-    private static final Item CREATIVE_TAB_ITEM = Items.DIRT; // FIXME: make this an item from the mod
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MoreNuggies.MODID);
 
@@ -94,7 +97,8 @@ public class MoreNuggiesItemRegistry {
 
     public static final RegistryObject<CreativeModeTab> CREATIVE_TAB = CREATIVE_MODE_TABS.register("more_nuggies_creative_tab", () -> CreativeModeTab.builder()
             .withTabsBefore(CreativeModeTabs.COMBAT)
-            .icon(CREATIVE_TAB_ITEM::getDefaultInstance)
+            .icon(() -> COOKED_CHICKEN_NUGGET.get().getDefaultInstance())
+            .title(Component.translatable("itemGroup.more_nuggies"))
             .displayItems((parameters, output) -> {
                 for (Field field : MoreNuggiesItemRegistry.class.getFields()) {
                     if (!Modifier.isStatic(field.getModifiers()) || field.getName().equals("CREATIVE_TAB")) {
