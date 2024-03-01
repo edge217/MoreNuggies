@@ -3,6 +3,14 @@
     {
       "id": "#more_nuggies:netherite_included",
       "required": false
+    },
+    {
+      "id": "#forge:armors/netherite",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/netherite",
+      "required": false
     }
   ]
 }

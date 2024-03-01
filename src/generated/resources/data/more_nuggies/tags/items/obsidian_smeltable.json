@@ -3,6 +3,14 @@
     {
       "id": "#more_nuggies:obsidian_included",
       "required": false
+    },
+    {
+      "id": "#forge:armors/obsidian",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/obsidian",
+      "required": false
     }
   ]
 }

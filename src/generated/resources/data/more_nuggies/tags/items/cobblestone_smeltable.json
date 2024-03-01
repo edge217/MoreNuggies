@@ -3,6 +3,14 @@
     {
       "id": "#more_nuggies:cobblestone_included",
       "required": false
+    },
+    {
+      "id": "#forge:armors/cobblestone",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/cobblestone",
+      "required": false
     }
   ]
 }

@@ -3,6 +3,14 @@
     {
       "id": "#more_nuggies:raw_chicken_included",
       "required": false
+    },
+    {
+      "id": "#forge:armors/raw_chicken",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/raw_chicken",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "cyclic:emerald_helmet",
+      "required": false
+    },
+    {
+      "id": "cyclic:emerald_chestplate",
+      "required": false
+    },
+    {
+      "id": "cyclic:emerald_leggings",
+      "required": false
+    },
+    {
+      "id": "cyclic:emerald_boots",
+      "required": false
+    }
+  ]
+}

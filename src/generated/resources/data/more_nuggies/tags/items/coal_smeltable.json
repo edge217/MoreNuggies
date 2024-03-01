@@ -3,6 +3,14 @@
     {
       "id": "#more_nuggies:coal_included",
       "required": false
+    },
+    {
+      "id": "#forge:armors/coal",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/coal",
+      "required": false
     }
   ]
 }

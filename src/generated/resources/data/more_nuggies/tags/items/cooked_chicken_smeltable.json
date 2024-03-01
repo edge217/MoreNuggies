@@ -3,6 +3,14 @@
     {
       "id": "#more_nuggies:cooked_chicken_included",
       "required": false
+    },
+    {
+      "id": "#forge:armors/cooked_chicken",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/cooked_chicken",
+      "required": false
     }
   ]
 }

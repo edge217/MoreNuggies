@@ -3,6 +3,14 @@
     {
       "id": "#more_nuggies:charcoal_included",
       "required": false
+    },
+    {
+      "id": "#forge:armors/charcoal",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/charcoal",
+      "required": false
     }
   ]
 }

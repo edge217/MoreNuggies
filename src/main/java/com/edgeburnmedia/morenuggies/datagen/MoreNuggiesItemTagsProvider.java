@@ -40,7 +40,10 @@ public class MoreNuggiesItemTagsProvider extends ItemTagsProvider {
 
             // Add #more_nuggies:x_smeltable tags
             // Includes #more_nuggies:x_included tag
-            tag(ItemTags.create(new ResourceLocation(MoreNuggies.MODID, "%s_smeltable".formatted(mat)))).addOptionalTag(new ResourceLocation(MoreNuggies.MODID, "%s_included".formatted(mat)));
+            tag(ItemTags.create(new ResourceLocation(MoreNuggies.MODID, "%s_smeltable".formatted(mat))))
+                    .addOptionalTag(new ResourceLocation(MoreNuggies.MODID, "%s_included".formatted(mat))) // add more_nuggies:x_included
+                    .addOptionalTag(ItemTags.create(new ResourceLocation("forge", "armors/%s".formatted(mat))))
+                    .addOptionalTag(ItemTags.create(new ResourceLocation("forge", "tools/%s".formatted(mat))));
 
             // Add #forge:nuggets/* tags
             ResourceLocation finishedTag = new ResourceLocation("forge", "nuggets/%s".formatted(mat));

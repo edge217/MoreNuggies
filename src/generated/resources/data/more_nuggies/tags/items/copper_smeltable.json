@@ -3,6 +3,14 @@
     {
       "id": "#more_nuggies:copper_included",
       "required": false
+    },
+    {
+      "id": "#forge:armors/copper",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/copper",
+      "required": false
     }
   ]
 }

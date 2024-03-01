@@ -3,6 +3,14 @@
     {
       "id": "#more_nuggies:amethyst_included",
       "required": false
+    },
+    {
+      "id": "#forge:armors/amethyst",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/amethyst",
+      "required": false
     }
   ]
 }

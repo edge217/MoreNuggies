@@ -3,6 +3,14 @@
     {
       "id": "#more_nuggies:phantom_membrane_included",
       "required": false
+    },
+    {
+      "id": "#forge:armors/phantom_membrane",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/phantom_membrane",
+      "required": false
     }
   ]
 }

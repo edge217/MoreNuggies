@@ -3,6 +3,14 @@
     {
       "id": "#more_nuggies:wooden_included",
       "required": false
+    },
+    {
+      "id": "#forge:armors/wooden",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/wooden",
+      "required": false
     }
   ]
 }

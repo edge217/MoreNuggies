@@ -3,6 +3,14 @@
     {
       "id": "#more_nuggies:redstone_included",
       "required": false
+    },
+    {
+      "id": "#forge:armors/redstone",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/redstone",
+      "required": false
     }
   ]
 }

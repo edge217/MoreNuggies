@@ -3,6 +3,14 @@
     {
       "id": "#more_nuggies:diamond_included",
       "required": false
+    },
+    {
+      "id": "#forge:armors/diamond",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/diamond",
+      "required": false
     }
   ]
 }

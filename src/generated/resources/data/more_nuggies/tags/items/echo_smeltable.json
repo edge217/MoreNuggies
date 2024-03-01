@@ -3,6 +3,14 @@
     {
       "id": "#more_nuggies:echo_included",
       "required": false
+    },
+    {
+      "id": "#forge:armors/echo",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/echo",
+      "required": false
     }
   ]
 }

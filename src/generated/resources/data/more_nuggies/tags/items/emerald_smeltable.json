@@ -3,6 +3,14 @@
     {
       "id": "#more_nuggies:emerald_included",
       "required": false
+    },
+    {
+      "id": "#forge:armors/emerald",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/emerald",
+      "required": false
     }
   ]
 }
