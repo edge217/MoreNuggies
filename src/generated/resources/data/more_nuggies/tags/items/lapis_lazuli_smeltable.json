@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "#more_nuggies:lapis_lazuli_included",
+      "required": false
+    },
+    {
+      "id": "#forge:armors/lapis_lazuli",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/lapis_lazuli",
+      "required": false
+    }
+  ]
+}

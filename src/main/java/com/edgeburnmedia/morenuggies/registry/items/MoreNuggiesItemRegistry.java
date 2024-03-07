@@ -85,6 +85,10 @@ public class MoreNuggiesItemRegistry {
     public static final RegistryObject<Item> CHARCOAL_NUGGET = ITEMS.register("charcoal_nugget",
             () -> new MiniFuelItem(new Item.Properties()));
 
+    public static final RegistryObject<Item> FLINT_NUGGET = ITEMS.register("flint_nugget", () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> LAPIS_LAZULI_NUGGET = ITEMS.register("lapis_lazuli_nugget", () -> new Item(new Item.Properties()));
+
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MoreNuggies.MODID);
 
     public static List<Item> getItems() {

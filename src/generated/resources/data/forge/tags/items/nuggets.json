@@ -75,6 +75,14 @@
     {
       "id": "#forge:nuggets/charcoal",
       "required": false
+    },
+    {
+      "id": "#forge:nuggets/flint",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/lapis_lazuli",
+      "required": false
     }
   ]
 }

@@ -45,6 +45,8 @@ public class MoreNuggiesRecipeProvider extends RecipeProvider {
         map.put(MoreNuggiesItemRegistry.REDSTONE_NUGGET.get(), Items.REDSTONE);
         map.put(MoreNuggiesItemRegistry.SCUTE_NUGGET.get(), Items.SCUTE);
         map.put(MoreNuggiesItemRegistry.WOODEN_NUGGET.get(), Items.OAK_PLANKS);
+        map.put(MoreNuggiesItemRegistry.FLINT_NUGGET.get(), Items.FLINT);
+        map.put(MoreNuggiesItemRegistry.LAPIS_LAZULI_NUGGET.get(), Items.LAPIS_LAZULI);
         return map;
     }
 
